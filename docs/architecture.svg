@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="660" height="475" preserveAspectRatio="xMinYMin meet" viewBox="0 0 660 475" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="660" height="475"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-475)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="5" y="368" width="178" height="92" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="5" y="431" width="178" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="13" y="442" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,884) scale(1,-1)">Scheduler</text>
+			<text x="12" y="416" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,832) scale(1,-1)">- sensors : vector&lt;Sensor*&gt;</text>
+			<path d="M 5,406 L 183,406 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="12" y="391" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,782) scale(1,-1)">+ addSensor(s : Sensor*) : void</text>
+			<text x="12" y="378" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,756) scale(1,-1)">+ simulation(ticks : int) : void</text>
+			<rect x="230" y="264" width="205" height="196" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="230" y="431" width="205" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="238" y="442" style="font-family: Helvetica-Oblique; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,884) scale(1,-1)">Sensor {abstract}</text>
+			<text x="237" y="416" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,832) scale(1,-1)"># id : const int</text>
+			<text x="237" y="403" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,806) scale(1,-1)"># type : string</text>
+			<text x="237" y="390" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,780) scale(1,-1)"># server : Server*</text>
+			<text x="237" y="377" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,754) scale(1,-1)"># period, tickCounter : int</text>
+			<text x="237" y="364" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,728) scale(1,-1)"># elapsedTicks : int</text>
+			<text x="237" y="351" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,702) scale(1,-1)">- nextId : long long {static}</text>
+			<text x="237" y="338" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,676) scale(1,-1)">- usedIds : set&lt;int&gt; {static}</text>
+			<path d="M 230,328 L 435,328 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="237" y="313" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,626) scale(1,-1)">+ update() : void</text>
+			<text x="237" y="300" style="font-family: Helvetica-Oblique; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,600) scale(1,-1)">+ execute() : void {abstract}</text>
+			<text x="237" y="287" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,574) scale(1,-1)">+ setPeriod(p : int) : void</text>
+			<text x="237" y="274" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,548) scale(1,-1)">+ ~Sensor() {virtual}</text>
+			<rect x="480" y="264" width="175" height="196" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="480" y="431" width="175" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="488" y="442" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,884) scale(1,-1)">Server</text>
+			<text x="487" y="416" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,832) scale(1,-1)">- name : string</text>
+			<text x="487" y="403" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,806) scale(1,-1)">- sessionDirectory : path</text>
+			<text x="487" y="390" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,780) scale(1,-1)">- stats : map&lt;string, StatData&gt;</text>
+			<text x="487" y="377" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,754) scale(1,-1)">- thresholds : map&lt;...&gt;</text>
+			<text x="487" y="364" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,728) scale(1,-1)">- alertCount : size_t</text>
+			<path d="M 480,354 L 655,354 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="487" y="339" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,678) scale(1,-1)">+ receive(... float ...) : void</text>
+			<text x="487" y="326" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,652) scale(1,-1)">+ receive(... int ...) : void</text>
+			<text x="487" y="313" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,626) scale(1,-1)">+ receive(... bool ...) : void</text>
+			<text x="487" y="300" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,600) scale(1,-1)">+ setAlertThresholds(...) : void</text>
+			<text x="487" y="287" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,574) scale(1,-1)">+ fileWrite(...) : void</text>
+			<text x="487" y="274" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,548) scale(1,-1)">+ printStatistics() : void</text>
+			<path d="M 183,420 L 230,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 224,423 L 230,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 224,417 L 230,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="185" y="430" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,860) scale(1,-1)">0..*</text>
+			<text x="208" y="430" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,860) scale(1,-1)">0..*</text>
+			<text x="184" y="405" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,810) scale(1,-1)">active</text>
+			<path d="M 435,420 L 480,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 474,423 L 480,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 474,417 L 480,420 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="438" y="430" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,860) scale(1,-1)">0..*</text>
+			<text x="462" y="430" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,860) scale(1,-1)">0..1</text>
+			<text x="440" y="405" style="font-family: Helvetica; font-size: 8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,810) scale(1,-1)">envoie</text>
+			<rect x="5" y="75" width="149" height="105" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="5" y="151" width="149" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="13" y="162" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,324) scale(1,-1)">TemperatureSensor</text>
+			<text x="12" y="136" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,272) scale(1,-1)">- value : float</text>
+			<text x="12" y="123" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,246) scale(1,-1)">- minVal, maxVal : float</text>
+			<path d="M 5,113 L 154,113 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="12" y="98" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,196) scale(1,-1)">+ execute() : void</text>
+			<text x="12" y="85" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,170) scale(1,-1)">+ getValue() : float</text>
+			<path d="M 79.5,180 L 79.5,212 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="172" y="75" width="149" height="105" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="172" y="151" width="149" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="180" y="162" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,324) scale(1,-1)">HumiditySensor</text>
+			<text x="179" y="136" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,272) scale(1,-1)">- value : float</text>
+			<text x="179" y="123" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,246) scale(1,-1)">- minVal, maxVal : float</text>
+			<path d="M 172,113 L 321,113 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="179" y="98" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,196) scale(1,-1)">+ execute() : void</text>
+			<text x="179" y="85" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,170) scale(1,-1)">+ getValue() : float</text>
+			<path d="M 246.5,180 L 246.5,212 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="339" y="75" width="149" height="105" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="339" y="151" width="149" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="347" y="162" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,324) scale(1,-1)">SoundSensor</text>
+			<text x="346" y="136" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,272) scale(1,-1)">- value : int</text>
+			<text x="346" y="123" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,246) scale(1,-1)">- minVal, maxVal : int</text>
+			<path d="M 339,113 L 488,113 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="346" y="98" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,196) scale(1,-1)">+ execute() : void</text>
+			<text x="346" y="85" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,170) scale(1,-1)">+ getValue() : int</text>
+			<path d="M 413.5,180 L 413.5,212 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="506" y="88" width="149" height="92" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="506" y="151" width="149" height="29" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="514" y="162" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,324) scale(1,-1)">LightSensor</text>
+			<text x="513" y="136" style="font-family: Helvetica; font-size: 8.8px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,272) scale(1,-1)">- value : bool</text>
+			<path d="M 506,126 L 655,126 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="513" y="111" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,222) scale(1,-1)">+ execute() : void</text>
+			<text x="513" y="98" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(14%,26%,34%); stroke:none;" transform="translate(0,196) scale(1,-1)">+ getValue() : bool</text>
+			<path d="M 580.5,180 L 580.5,212 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 79.5,212 L 580.5,212 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 332.5,212 L 332.5,251 Z" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="326.5 251, 338.5 251, 332.5 264" style="stroke: rgb(14%,26%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>
