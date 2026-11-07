@@ -1,6 +1,6 @@
 # AP4A — Simulateur de capteurs
 
-Projet de TP en C++17, réalisé par Elio Fabrizio. Le programme simule les capteurs d’un bureau sur six étapes. Chaque capteur prend ses mesures à son propre rythme, puis le serveur les enregistre et calcule un bilan par type de mesure.
+Projet de TP en C++17 réalisé par Elio Fabrizio dans le cadre de l’UE AP4A. Le programme simule les capteurs d’un bureau sur six étapes. Chaque capteur prend ses mesures à son propre rythme, puis le serveur les enregistre et calcule un bilan par type de mesure.
 
 La démo utilise deux capteurs de température, un capteur de bruit, un capteur d’humidité et un capteur de lumière. Le scénario est volontairement chaud, sec et bruyant pour qu’on voie les alertes dès le premier lancement.
 
